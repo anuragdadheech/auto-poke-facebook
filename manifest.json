@@ -1,0 +1,20 @@
+{
+  "name": "Facebook Auto Poke",
+  "version": "1.0",
+  "description": "Automatically pokes back facebook friends",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "poker.png",
+    "default_popup": "poker_info.html"
+  },
+  "content_scripts": [ {
+      "js": [ "thirdParty/jquery.min.js", "poker.js" ],
+      "matches": [ "*://*.facebook.com/*" ]
+   }],
+   "icons": {
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+    },
+    "short_name": "Auto Poke"
+}
