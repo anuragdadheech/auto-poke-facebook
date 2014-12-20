@@ -2,10 +2,13 @@
 window.setInterval(function(){
 	poke();
 }, 5000);
+
+//main poke function called after an interval
 function poke(){
 	pokeList(document.getElementsByClassName("_42ft"));
 }
 
+//iterating through list to poke each
 function pokeList(list){
 	for(var i=0; i<list.length; i++) {
 		var e = list[i];
