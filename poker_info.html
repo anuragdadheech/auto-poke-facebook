@@ -4,6 +4,7 @@
 		<title>FB Auto-Poker</title>
 		<link rel="stylesheet" type="text/css" href="css/fontello.css">
 		<link rel="stylesheet" type="text/css" href="css/popup.css">
+		
 	</head>
 	<body>
 		<header>
@@ -13,14 +14,15 @@
 			<ul>
 				<li>
 					<div class="switch">
-					    <input type="checkbox">
+					    <input id = "state" type="checkbox" checked>
 					    <label><i class="icon-off"></i></label>
 					</div> 
 				</li>
-				<li class = "button-state">Enabled</li>
-				<li><i class="icon-off"></i></li>
+				<li id = "button-state">Enabled</li>
+				<li></li>
 			</ul>
 		</div>
+		<script src="options.js"></script>
 		<!-- <p style="font-size: 24px; color: #333;">Facebook Auto Poke</p>
 		<p>
 			Have <a href="http://www.facebook.com/pokes" target="blank">Facebook poke page</a> open for this extension to work. No need to click on extension icon. Happy poking!!! :)
