@@ -1,2 +1,4 @@
 
 .icon-off:before { content: '\e800'; } /* '' */
+.icon-angle-right:before { content: '\e801'; } /* '' */
+.icon-angle-down:before { content: '\e802'; } /* '' */

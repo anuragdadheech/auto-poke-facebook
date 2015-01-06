@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 	<head>
@@ -19,10 +20,24 @@
 					</div> 
 				</li>
 				<li id = "button-state">Enabled</li>
-				<li></li>
+				<li id = "help-container">
+					<span class = "help-button">
+						How to use:
+					</span>
+					<span>
+						<i id = "chevron" class = "icon-angle-down"></i>
+					</span>
+
+				</li>
 			</ul>
+			<div class = "help-data">
+				Have <a href="http://www.facebook.com/pokes" target="blank">Facebook poke page</a> open for this extension to work. <br/>
+				Happy poking!!! :)
+			</div>
 		</div>
 		<script src="options.js"></script>
+		<script src="thirdParty/jquery.min.js"></script>
+		<script src="help.js"></script>
 		<!-- <p style="font-size: 24px; color: #333;">Facebook Auto Poke</p>
 		<p>
 			Have <a href="http://www.facebook.com/pokes" target="blank">Facebook poke page</a> open for this extension to work. No need to click on extension icon. Happy poking!!! :)

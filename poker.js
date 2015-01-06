@@ -1,19 +1,15 @@
 "use strict";
 /*global chrome*/ 
 window.setInterval(function(){
+
 	chrome.storage.sync.get({
 	state: true
 	}, function(items) {
-		document.getElementById("state").checked = items.state;
-		var status = document.getElementById("button-state");
-		if (items.state === true) {
-			status.textContent = "Enabled";
-		}
-		else if (items.state === false) {
-			status.textContent = "Disabled";
-		}
+		if(items.state === true) {
+			// alert(items.state);
+        	poke();
+        }
 	});
-	poke();
 }, 5000);
 
 //main poke function called after an interval
