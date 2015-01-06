@@ -1,6 +1,6 @@
 /*global $*/ 
 "use strict";
-$(".help-container").click(function(){
+$("#help-container").click(function(){
 	$(".help-data").slideToggle();
 	if ($("#chevron").hasClass("icon-angle-down")) {
 		$("#chevron").removeClass("icon-angle-down").addClass("icon-angle-right");
